@@ -10,7 +10,7 @@
     "mongoose": "^6.8.3"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "devDependencies": {
