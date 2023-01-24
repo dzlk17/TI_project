@@ -6,7 +6,6 @@ pagesRouter.use(cookieJwtAuth);
 
 pagesRouter.get("/", async (req, res) => {
     res.render('pages/index');
-    return res.send("First get");
 })
 
 pagesRouter.get("/animation", async (req, res) => {
