@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include(header); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Sortowanie bąbelkowe - opis algorytmu</h1><br/>
+     Sortowanie bąbelkowe jest jednym z najprostszych istniejących algorytmów sortujących. Złożoność tego algorytmu jest rzędu: <br/>
+        <p align="center"> O(
+        <math>
+            <msup>
+            <mi>n</mi>
+            <mn>2</mn>
+          </msup>
+        </math>
+        )</p>
+
+        Algorytm składa się z dwóch zagnieżdżonych pętli. Przy każdym wywołaniu wewnętrznej pętli, porównywane są dwie znajdujące się obok siebie wartości i jeżeli są one nieposortowane, to program zamienia je miejscami. W ten sposób, po każdym zakończonym cyklu pętli wewnętrznej, największa liczba z nieposortowanej części zbioru jest przenoszona na ostatnią pozycję.</p>
+
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

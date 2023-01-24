@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="/static/reg.js" defer></script>
+</head>
+<body class="container">
+
+<header>
+  <%- include(header); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Rejestracja użytkownika</h1>
+    <form>
+      <label for="login">Login:</label><br>
+      <input type="text" id="login" name="login" required><br>
+      <label for="pass">Hasło:</label><br>
+      <div class="password-container"></div>
+        <input type="password" id="pass" name="pass" autocomplete="current-password" required>
+        <i class="far fa-eye" id="togglePass" style="margin-left: -30px; margin-right: 20px; cursor: pointer;"></i>
+        <button type="button" onclick="regUser(this.form)">Potwierdź</button>
+      </div>
+    </form>
+    <div class="container signin">
+      <p><br/>Masz już konto? <a href="/log">Zaloguj się</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
