@@ -2,7 +2,7 @@
 
 ## Working aplication - https://tiprojectbubblesort.up.railway.app/
 
-#####Simple web application written for university course. Project contains animation presenting bubble sort and is connected with database in MongoDB which stores information about user and numbers used in animation. 
+#### Simple web application written for university course. Project contains animation presenting bubble sort and is connected with database in MongoDB which stores information about user and numbers used in animation. 
 
 "Dodaj liczby" - Button lets us to save numbers in user database or in local storage ( not logged in users). 
 "Wczytaj liczby" - At the screen occurs graphical interpretation of saved numbers
