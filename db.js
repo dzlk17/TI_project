@@ -91,7 +91,7 @@ dbRouter.post("/param", async (req, res) => {
                     return res.status(400).end();
             }
             // console.log(user.user.name);
-            numberModel.findOneAndUpdate({name: user.user.name}, {list: req.body.numberList},{
+            numberModel.findOneAndUpdate({name: user.user}, {list: req.body.numberList},{
                 new: true,
                 upsert: true
             }, async function(err, doc, res){
