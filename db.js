@@ -112,7 +112,7 @@ dbRouter.get("/param", async (req, res) => {
     try{
         const token = req.cookies.token;
         const user = jwt.verify(token, process.env.MY_SECRET_KEY);
-        numberModel.findOne({name: user.user.name}, async function (err, foundedUser) {
+        numberModel.findOne({name: user.user}, async function (err, foundedUser) {
             if (err){
                 console.log(err)
             }
